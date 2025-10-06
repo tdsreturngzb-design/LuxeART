@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CozyNest Home Decor - Elevate Your Space</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        a {
+            text-decoration: none;
+            color: #8B4513; /* Earthy brown */
+        }
+        a:hover {
+            color: #A0522D;
+        }
+
+        /* Header/Navigation */
+        header {
+            background: linear-gradient(to right, #D2B48C, #F5DEB3); /* Warm gradient */
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #8B4513;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        .nav-links li a {
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://via.placeholder.com/1200x600?text=Your+Hero+Image+Here') no-repeat center/cover; /* Replace with your image */
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-top: 80px; /* Account for fixed header */
+        }
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .cta-button {
+            background: #8B4513;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background: #A0522D;
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #8B4513;
+        }
+
+        /* About Section */
+        .about {
+            background: #FFF8DC; /* Light beige */
+            text-align: center;
+        }
+        .about p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Products Section */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-card h3 {
+            padding: 1rem;
+            color: #8B4513;
+        }
+        .product-card p {
+            padding: 0 1rem 1rem;
+            color: #666;
+        }
+        .product-price {
+            padding: 0 1rem 1rem;
+            font-weight: bold;
+            color: #8B4513;
+            font-size: 1.2rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #F5DEB3;
+            text-align: center;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: 2rem auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .contact input, .contact textarea {
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .contact button {
+            background: #8B4513;
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .contact button:hover {
+            background: #A0522D;
+        }
+
+        /* Footer */
+        footer {
+            background: #8B4513;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            section {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">CozyNest Home Decor</div> <!-- Replace with your business name -->
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to CozyNest</h1>
+            <p>Transform your home with elegant, timeless decor that brings warmth and style to every space.</p>
+            <a href="#products" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At CozyNest Home Decor, we curate handpicked pieces inspired by nature and modern elegance. From cozy textiles to statement lighting, our collection helps you create a sanctuary. Founded in [Year], we're passionate about sustainable, stylish living.</p> <!-- Customize this text -->
+    </section>
+
+    <section id="products">
+        <h2>Featured Products</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Vintage+Lamp" alt="Vintage Lamp"> <!-- Replace with product image -->
+                <h3>Vintage Table Lamp</h3>
+                <p>Soft glow with rustic charm. Perfect for bedside tables.</p>
+                <div class="product-price">$49.99</div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Cozy+Throw" alt="Cozy Throw">
+                <h3>Cozy Wool Throw</h3>
+                <p>Plush and warm, in earthy tones for ultimate comfort.</p>
+                <div class="product-price">$79.99</div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Wall+Art" alt="Wall Art">
+                <h3>Abstract Wall Art</h3>
+                <p>Hand-painted canvas to add personality to your walls.</p>
+                <div class="product-price">$129.99</div>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 2rem;">More products coming soon! Contact us for custom orders.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <p>Ready to decorate? Email us at info@cozynestdecor.com or fill out the form below.</p>
+        <form action="#" method="post"> <!-- Replace action with your form handler, e.g., Formspree or Google Forms -->
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 CozyNest Home Decor. All rights reserved. | Follow us on Instagram @cozynestdecor</p> <!-- Customize -->
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
